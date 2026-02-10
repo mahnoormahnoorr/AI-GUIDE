@@ -10,7 +10,7 @@ export MASTER_ADDR MASTER_PORT
 
 srun --nodes=4 --ntasks=32 --ntasks-per-node=8 --gpus-per-node=8 --cpu-bind=none \
   singularity exec "$SIF" bash -lc '
-    source visiontransformer-env/bin/activate
+    source h5-env/bin/activate
     python -m torch.distributed.run \
       --nnodes=$SLURM_JOB_NUM_NODES \
       --nproc_per_node=8 \
