@@ -1,5 +1,5 @@
 salloc --account=project_462000131 --partition=standard-g --time=01:30:00 \
-  --nodes=4 --ntasks-per-node=8 --gpus-per-node=8 --cpus-per-task=7 --mem-per-gpu=60G
+  --nodes=4 --ntasks-per-node=1 --gpus-per-node=8 --cpus-per-task=7 --mem-per-gpu=60G
 
 #srun --jobid 16004251 --nodelist=nid005486 --interactive --pty /bin/bash
 
