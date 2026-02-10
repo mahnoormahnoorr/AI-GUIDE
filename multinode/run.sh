@@ -1,5 +1,6 @@
+salloc --account=project_462000131 --partition=standard-g --time=01:30:00 \
+  --nodes=4 --ntasks-per-node=8 --gpus-per-node=8 --cpus-per-task=7 --mem-per-gpu=60G
 
-salloc --account=project_462000131 --partition=standard-g —-nodes=4 --gpus-per-node=8 --mem-per-gpu=60G --time=01:30:00
 
 MASTER_ADDR=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 MASTER_PORT=29500
