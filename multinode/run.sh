@@ -1,4 +1,3 @@
-srun --account=project_462000131 --partition=small --ntasks=1 --cpus-per-task=1  --mem=64G  --time=01:00:00 --nodes=1 --pty bash
 
 salloc --account=project_462000131 --partition=standard-g —-nodes=4 --gpus-per-node=8 --mem-per-gpu=60G --time=01:30:00
 
