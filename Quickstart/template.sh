@@ -1,4 +1,4 @@
-salloc --account=project_462000131 --partition=standard-g --nodes=1 --gpus-per-node=8 --mem-per-gpu=60G --time=01:30:00
+salloc --account=project_462000131 --partition=standard-g --nodes=1 --gpus-per-node=8 --mem-per-gpu=60G --time=10:30:00
 
 mkdir -p /scratch/project_462000131/mmahnoor/tmp
 export TMPDIR=/scratch/project_462000131/mmahnoor/tmp
