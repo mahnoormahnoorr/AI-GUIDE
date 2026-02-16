@@ -3,8 +3,11 @@ salloc --account=project_462000131 --partition=standard-g --time=01:30:00 \
 
 #srun --jobid 16004251 --nodelist=nid005486 --interactive --pty /bin/bash
 
-module use /appl/local/containers/ai-modules
-module load singularity-AI-bindings
+module purge
+module use /appl/local/laifs/modules
+module load lumi-aif-singularity-bindings
+
+
 export SIF=/appl/local/laifs/containers/lumi-multitorch-u24r64f21m43t29-20260124_092648/lumi-multitorch-full-u24r64f21m43t29-20260124_092648.sif
 
 mkdir -p /scratch/project_462000131/mmahnoor/tmp
