@@ -14,8 +14,7 @@ mkdir -p /scratch/project_462000131/mmahnoor/tmp
 export TMPDIR=/scratch/project_462000131/mmahnoor/tmp
 
 
-module use /appl/local/containers/ai-modules
-module load singularity-AI-bindings
+
 
 MASTER_ADDR=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 MASTER_PORT=29500
