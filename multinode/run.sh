@@ -9,7 +9,6 @@ module load lumi-aif-singularity-bindings
 
 
 export SIF=/appl/local/laifs/containers/lumi-multitorch-u24r64f21m43t29-20260124_092648/lumi-multitorch-full-u24r64f21m43t29-20260124_092648.sif
-
 mkdir -p /scratch/project_462000131/mmahnoor/tmp
 export TMPDIR=/scratch/project_462000131/mmahnoor/tmp
 
