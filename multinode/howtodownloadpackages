@@ -15,4 +15,13 @@ srun singularity exec "$SIF" bash -c "
     python3 data_audio.py
 "
 
+example: 
+
+mmahnoor@uan09:/scratch/project_462001302/mmahnoor/ASR/Gemma> export SIF=/appl/local/laifs/containers//lumi-multitorch-u24r70f21m50t210-20260
+415_130625/lumi-multitorch-full-u24r70f21m50t210-20260415_130625.sif
+mmahnoor@uan09:/scratch/project_462001302/mmahnoor/ASR/Gemma> singularity shell /appl/local/laifs/containers/lumi-multitorch-u24r70f21m50t210
+-20260415_130625/lumi-multitorch-full-u24r70f21m50t210-20260415_130625.sif
+Singularity> source env/bin/activate
+(env) Singularity> pip install "transformers>=5.10.1"
+Collecting transformers>=5.10.1
 
